@@ -5,6 +5,8 @@ module.exports = {
       node: true,
     },
     extends: [
+      "react-app",
+      "react-app/jest",
       "eslint:recommended",
       "plugin:react/recommended",
       "plugin:react-hooks/recommended",
