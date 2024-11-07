@@ -21,18 +21,6 @@ function App() {
         >
           Stop Rotation
         </button>
-        <button
-          className='p-2 bg-blue-500 rounded mb-2'
-          onClick={() => setAction('zoomIn')}
-        >
-          Zoom In
-        </button>
-        <button
-          className='p-2 bg-blue-500 rounded mb-2'
-          onClick={() => setAction('zoomOut')}
-        >
-          Zoom Out
-        </button>
       </div>
 
       {/* Interactive globe section */}

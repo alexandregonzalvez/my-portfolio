@@ -21,12 +21,33 @@ module.exports = {
     },
     plugins: ["react"],
     rules: {
-      "react/prop-types": "off",    // Désactive la vérification des types de prop dans React
-      "prettier/prettier": ["error", { "endOfLine": "auto" }] // Configure Prettier dans ESLint
+      "react/prop-types": "off", // Désactive la vérification des types de prop dans React
+      "prettier/prettier": ["error", { "endOfLine": "auto" }], // Configure Prettier dans ESLint
+  
+      // Autorise plusieurs espaces pour aligner les commentaires sans erreur
+      "no-multi-spaces": [
+        "error",
+        {
+          exceptions: {
+            VariableDeclarator: true,
+            ImportDeclaration: true,
+          },
+        },
+      ],
+  
+      // Applique un espace après // dans les commentaires
+      "spaced-comment": [
+        "error",
+        "always",
+        {
+          exceptions: ["-", "+"],
+          markers: ["=", "!", "/"],
+        },
+      ],
     },
     settings: {
       react: {
-        version: "detect",          // Détecte la version de React pour les linting rules
+        version: "detect", // Détecte la version de React pour les linting rules
       },
     },
   };
