@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# Interactive Portfolio - Development Phase
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## How to Install and Run the Project
 
-## Available Scripts
+To set up the project locally and run it, follow these steps:
 
-In the project directory, you can run:
+1. Clone the repository to your local machine:
+   ```bash
+   git clone <repository_url>
+   ```
 
-### `npm start`
+2. Navigate to the project directory:
+   ```bash
+   cd <project_directory>
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
 
-### `npm test`
+5. Open your browser and navigate to `http://localhost:3000` to view the project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is an **interactive and immersive portfolio**, designed to showcase professional work and projects through a visually engaging 3D interface. The current implementation serves as a **proof of concept (POC)**, focusing on the core background effects and interactions rather than the actual portfolio content.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Current Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Dynamic Starry Background**: A live, animated background featuring stars and galaxy effects, creating an immersive space environment.
+- **Interactive Rotating Globe**:
+  - A 3D Earth model with realistic textures that can be rotated and dragged using the mouse.
+  - Zoom functionality, allowing users to zoom in and out on the globe.
+- **Clickable Points of Interest**:
+  - Specific markers on the globe (e.g., Paris, Toulouse, and Montreal) that can be clicked to display related information.
+  - When a point is clicked, an information panel slides in to showcase project details.
+- **Camera Transitions**:
+  - Smooth animations when zooming into or out of points of interest.
+  - The camera shifts to provide a side view with the Earth partially visible, enhancing the spatial experience.
 
-### `npm run eject`
+### Limitations in the Current Version
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Deselection of Points**: Once a point of interest is selected, it cannot yet be deselected manually.
+- **Feature Restrictions**:
+  - Rotation resumes only after closing the information panel.
+  - Other planned features, such as advanced interactions or project filters, are not implemented yet.
+- **Portfolio Content**: The content for the portfolio is placeholder text, and the current focus is on the interactive elements and visual effects.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Development Process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The code has been developed iteratively with the support of **ChatGPT**, a conversational AI. The development process involved:
 
-## Learn More
+1. Detailed feedback on generated code, ensuring functionality aligned with the vision for the project.
+2. Frequent adjustments and rewrites to refine features such as drag-and-drop, zooming, and animations.
+3. Clear separation of responsibilities in the code, modularizing functionality like zoom, rotation, and camera animations.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Collaborative Workflow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The implementation reflects a dynamic collaboration:
+- Feedback loops were critical, with continuous requests for changes, feature additions, and corrections to improve the codebase.
+- Many iterations involved in-depth explanations and clarifications to refine and tailor the AI-generated code to meet specific requirements.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Plans
 
-### Analyzing the Bundle Size
+In the upcoming phases, the project will:
+- Introduce actual portfolio content.
+- Enhance interactivity by allowing deselection of markers and smooth transitions.
+- Add advanced filters and animations for a richer user experience.
+- Improve the modularity and scalability of the codebase.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This is a work in progress, and the current version focuses primarily on demonstrating the core interactive elements and visual concepts.
